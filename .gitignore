@@ -1,16 +1,11 @@
-# Ignore all
-*
 
-# Unignore all with extensions
-!*.*
-
-# Unignore all dirs
-!*/
+# ignore dirs
+.vscode/*
 
 ### Above combination will ignore all files without extension ###
 
 # Ignore files with extension `.class` & `.exe`
 *.class
 *.exe
-.json
+*.json
 
