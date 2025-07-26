@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int isl(int i)
+bool isl(int i)
 {
     if (i % 400 == 0)
     {
@@ -26,14 +26,14 @@ int main()
     {
         if (isl(i))
         {
+            A[z] = i;
             z++;
-            A[z] += i;
         }
     }
     cout << z << endl;
-    for (i = 0, i < z, i++)
+    for (i = 0; i < z; i++)
     {
-        cout << A[i];
+        cout << A[i] << " ";
     }
     return 0;
 }
