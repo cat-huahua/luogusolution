@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstdio>
+#include<cstring>
 using namespace std;
 bool t{10000}
 ct(int h,int e){
@@ -11,7 +11,7 @@ ct(int h,int e){
 }
 int main()
 {
-    nenset
+    memset(t,)
 
     return 0;
 }
