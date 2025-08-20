@@ -6,5 +6,5 @@
 
 # Ignore files with extension `.class` & `.exe`
 *.class
-*.json
+
 
