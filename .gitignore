@@ -4,7 +4,7 @@
 
 ### Above combination will ignore all files without extension ###
 
-# Ignore files with extension `.class` & `.exe`
+# Ignore files with extension `.class`
 *.class
 
 
