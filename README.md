@@ -1,2 +1,2 @@
 solution for luogu
-luogu = https://www.luogu.com.cn
+luogu = https://www.luogu.com.cn/training/
