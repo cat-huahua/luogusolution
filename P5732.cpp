@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int n, Array[20][20];
+#define N 21
+int n, Array[N][N];
 int main()
 {
     cin >> n;
