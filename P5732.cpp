@@ -5,7 +5,7 @@ int n, Array[N][N];
 int main()
 {
     cin >> n;
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
         Array[i][0] = 1;
         cout << Array[i][0] << " ";
