@@ -10,8 +10,10 @@ int main()
     {
         for (int j = 0; j < i; j++)
         {
-            
+            Array[i][j] = Array[i - 1][j] + Array[i][j - 1];
+            cout << Array[i][j] << " ";
         }
+        cout << endl;
     }
     
     return 0;
