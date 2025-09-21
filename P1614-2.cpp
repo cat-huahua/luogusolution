@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 #define N 3000
-int n, m, Input[N], Arr[N];
+int n, m, Input[N];
 int main()
 {
     int j, i;
