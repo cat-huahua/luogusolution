@@ -92,4 +92,5 @@ int main()
     {
         cout << Arr[i] << " ";
     }
+    return 0;
 }
