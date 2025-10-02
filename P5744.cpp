@@ -67,14 +67,14 @@ int main()
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        #define s SArr[i]
+#define s SArr[i]
         cin >> s.name >> s.age >> s.point;
         add(i);
     }
     for (int i = 0; i < n; i++)
     {
-        #define Sd SArr[i]
-        cout << Sd.name << Sd.age << Sd.point;
+#define Sd SArr[i]
+        cout << Sd.name << Sd.age << Sd.point << endl;
     }
     return 0;
 }
