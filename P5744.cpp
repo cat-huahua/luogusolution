@@ -58,9 +58,8 @@ int n;
 Student SArr[6];
 void add(int it)
 {
-    #define S SArr[it]
-    S.age++;
-    S.point + 100 - S.point / 20;
+    SArr[it].age++;
+    SArr[it].point + 100 - SArr[it].point / 20;
     return;
 }
 int main()
@@ -77,6 +76,5 @@ int main()
         #define Sd SArr[i]
         cout << Sd.name << Sd.age << Sd.point;
     }
-    
     return 0;
 }
