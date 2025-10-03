@@ -54,32 +54,55 @@ struct Student
     int age = 0;
     int point = 0;
 };
+
 int n;
 Student SArr[6];
-void add(int it)
+
+Student read()
 {
-    SArr[it].age++;
-    SArr[it].point += SArr[it].point / 5;
-    if (SArr[it].point > 600)
-    {
-        SArr[it].point = 600;
-    }
-    
-    return;
+    Student A;
+    cin >> A.name >> A.age >> A.point;
+    return A;
 }
+
+void print(Student A)
+{
+    cout << A.name << " " << A.age << " " << A.point << " " << endl;
+}
+
+Student add(Student A)
+{
+    A.age++;
+    A.point += A.point / 5;
+    if (A.point > 600)
+    {
+        A.point = 600;
+    }
+
+    return A;
+}
+
+void add2(Student &A)
+{
+    A.age++;
+    A.point += A.point / 5;
+    if (A.point > 600)
+    {
+        A.point = 600;
+    }
+}
+
 int main()
 {
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-#define s SArr[i]
-        cin >> s.name >> s.age >> s.point;
-        add(i);
+        SArr[i] = read();
     }
     for (int i = 0; i < n; i++)
     {
-#define Sd SArr[i]
-        cout << Sd.name << " " << Sd.age << " " << Sd.point << " " << endl;
+        add2(SArr[i]);
+        print(SArr[i]);
     }
     return 0;
 }
