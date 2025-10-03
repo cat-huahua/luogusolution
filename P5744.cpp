@@ -52,14 +52,19 @@ struct Student
 {
     string name = "";
     int age = 0;
-    double point = 0.0;
+    int point = 0;
 };
 int n;
 Student SArr[6];
 void add(int it)
 {
     SArr[it].age++;
-    SArr[it].point + 100 - SArr[it].point / 20;
+    SArr[it].point += SArr[it].point / 5;
+    if (SArr[it].point > 600)
+    {
+        SArr[it].point = 600;
+    }
+    
     return;
 }
 int main()
