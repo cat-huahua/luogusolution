@@ -52,7 +52,7 @@ struct Student
 {
     string name = "";
     int age = 0;
-    double point = 0;
+    double point = 0.0;
 };
 int n;
 Student SArr[6];
