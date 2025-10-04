@@ -38,6 +38,7 @@
 数据保证，$1 \leq n \leq 9$。
 */
 #include <iostream>
+#include <cstring>
 using namespace std;
 int n, A[9][9], d = 0;
 int Di[] = {0, 1, 0, -1};
@@ -54,17 +55,27 @@ bool iswall(int i, int j)
 int main()
 {
     cin >> n;
-    int i = 0, j = 0,x,y;
+    memset(A, 0, sizeof(A));
+    int i = 0, j = 0, x, y;
     for (int k = 1; k <= n * n; k++)
     {
         A[i][j] = k;
         x = i + Di[d];
         y = j + Dj[d];
-        if (iswall(x,y))
+        if (iswall(x, y))
         {
-            /* code */
+            d = (d + 1) % 4;
         }
-        
+        i = i + Di[d];
+        j = j + Dj[d];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%2d ", A[i][j]);
+        }
+        printf("\n");
     }
 
     return 0;
