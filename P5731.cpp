@@ -73,7 +73,7 @@ int main()
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%2d ", A[i][j]);
+            printf("%3d", A[i][j]);
         }
         printf("\n");
     }
