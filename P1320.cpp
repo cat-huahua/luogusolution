@@ -54,9 +54,20 @@
 数据保证，$3\leq N\leq 200$。
 */
 #include <iostream>
+#include <cstring>
 using namespace std;
-int A[200][200],x,y;
+int A[200][200],N, In,P = 0;
+bool Sta;
 int main()
 {
-    
+    cin >> N;
+    for (int i = 0; i < N * N; i += In)
+    {
+        cin >> In;
+        for (int j = 0; j < In; j++,P++)
+        {
+            /* code */
+        }
+        
+    }
 }
