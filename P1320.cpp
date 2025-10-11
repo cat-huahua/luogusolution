@@ -1,9 +1,9 @@
 #include <cstdio>
 using namespace std;
-int N = 0, C = 0;
-char A[200][200], Sta = 0, temp;
 int main()
 {
+    int N = 0, C = 0;
+    char A[200][200], Sta = '0', temp;
     while (scanf("%s", A[N]) != EOF)
     {
         N++;
