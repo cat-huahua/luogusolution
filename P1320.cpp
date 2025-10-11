@@ -8,7 +8,7 @@ int main()
     {
         N++;
     }
-    printf("%d", N);
+    printf("%d ", N);
     for (int i = 0; i < N*N; i++)
     {
         temp = A[i / N][i % N];
@@ -18,7 +18,7 @@ int main()
         }
         else
         {
-            printf("%d", C);
+            printf("%d ", C);
             Sta = temp;
             C = 1;
         }
