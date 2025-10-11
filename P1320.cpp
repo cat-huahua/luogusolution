@@ -9,7 +9,7 @@ int main()
         N++;
     }
     printf("%d ", N);
-    for (int i = 0; i < N*N; i++)
+    for (int i = 0; i < N * N; i++)
     {
         temp = A[i / N][i % N];
         if (temp == Sta)
@@ -23,6 +23,7 @@ int main()
             C = 1;
         }
     }
+    printf("%d ", C);
     printf("\n");
     return 0;
 }
