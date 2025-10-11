@@ -1,7 +1,7 @@
 #include <cstdio>
 using namespace std;
-int N = 0;
-char A[200][200], Sta = 0, C = 0, temp;
+int N = 0, C = 0;
+char A[200][200], Sta = 0, temp;
 int main()
 {
     while (scanf("%s", A[N]) != EOF)
