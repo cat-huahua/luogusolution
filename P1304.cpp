@@ -35,7 +35,7 @@ Pair A;
 
 Pair Goldbach(int Num)
 {
-    for (int i = 0; i < Len; i += 2)
+    for (int i = 0; i < Len; i++)
     {
         if (IsPrime(Num - P[i]))
         {
@@ -52,10 +52,10 @@ int main()
     int N;
     cin >> N;
     GPrime(N);
-    for (int i = 4; i <= N; i += 2)
+    for (int Num = 4; Num <= N; Num += 2)
     {
-        Goldbach(i);
-        printf("%d+%d=%d\n", i, A.x,A.y);
+        Goldbach(Num);
+        printf("%d=%d+%d\n", Num, A.x,A.y);
     }
 
     return 0;
