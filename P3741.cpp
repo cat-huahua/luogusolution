@@ -18,8 +18,6 @@ int main()
             c--;
         }
     }
-
     cout << cnt << endl;
-
     return 0;
 }
