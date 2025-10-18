@@ -9,11 +9,11 @@ int main()
     int q;
     cin >> w >> x >> h >> q;
     memset(A, 0, sizeof(A));
-    for (int i = 1; i < w; i++)
+    for (int i = 1; i <= w; i++)
     {
-        for (int j = 1; j < x; j++)
+        for (int j = 1; j <= x; j++)
         {
-            for (int k = 1; k < h; k++)
+            for (int k = 1; k <= h; k++)
             {
                 A[i][j][k] = 1;
             }
@@ -34,11 +34,11 @@ int main()
             }
         }
     }
-    for (int i = 1; i < w; i++)
+    for (int i = 1; i <= w; i++)
     {
-        for (int j = 1; j < x; j++)
+        for (int j = 1; j <= x; j++)
         {
-            for (int k = 1; k < h; k++)
+            for (int k = 1; k <= h; k++)
             {
                 if (A[i][j][k])
                     cnt++;
