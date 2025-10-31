@@ -1,6 +1,6 @@
 #include <cstdio>
 using namespace std;
-char str[] = R"(               ********
+char str[] = R"(                ********
                ************
                ####....#.
              #..###.....##....
