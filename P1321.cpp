@@ -3,22 +3,26 @@ using namespace std;
 int fs(string s, string t)
 {
     int count = 0;
+    int i,j;
     bool flag = false;
-    for (int i = 0; s[i] != '\0'; i++)
+    for (i = 0; s[i] != '\0';) 
     {
-        for (int j = 0; t[j] != '\0'; j++)
+        flag = false;
+        for (j = 0; t[j] != '\0'; j++)
         {
-            flag = false;
             if (s[i] == t[j])
-            {
-                flag = true;
+            {	
+		flag = true;
                 break;
             }
         }
         if (flag)
         {
-            count++;
+	    while(s[i] == t[j] && s[i] != 0){i++;j++;}
+	    count++;
         }
+	else
+	    i++;
     }
     return count;
 }
