@@ -7,7 +7,7 @@ int getnum(int i)
     #define findc s[i+3]
     if(findc >= '0' && findc <= '9')
     {
-    	return findc - '0';
+        return findc - '0';
     }
     else
     {
