@@ -8,7 +8,7 @@ int main()
     {
         for(int j = 0;j < N;j++)
         {
-            if(j == i || j == N - i)
+            if(j == i || j == N - i - 1)
                 cout << '+';
             else
                 cout << '-';
